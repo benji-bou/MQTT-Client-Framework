@@ -22,10 +22,10 @@ let package = Package(
         .target(
             name: "MQTT-Client-Framework",
             dependencies: [],
-            sources:["MQTTClient/MQTTClient"]),
+            path:"MQTTClient/MQTTClient"),
         .testTarget(
             name: "MQTT-Client-FrameworkTests",
             dependencies: ["MQTT-Client-Framework"],
-            sources:["MQTTClient/MQTTClientTests"]),
+            path:"MQTTClient/MQTTClientTests"),
     ]
 )
